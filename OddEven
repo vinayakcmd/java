@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+
+public class Oddeven {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); // Create Scanner object
+        int x = sc.nextInt(); // Read an integer from user input
+
+        if(x % 2 ==0) {
+            System.out.println("Even number");
+        } else {
+            System.out.println("Odd number");
+        }
+        }
+}
