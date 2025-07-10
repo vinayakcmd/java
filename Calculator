@@ -1,0 +1,47 @@
+import java.rmi.server.Operation;
+import java.util.Scanner;
+
+public class hw1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter First Number (a)");
+        double a = sc.nextDouble();
+        System.out.println("Enter Second Number (b)");
+        double b = sc.nextDouble();
+        System.out.println("Enter Operation (+,-,*,/)");
+        char Button = sc.next().charAt(0);
+        double result;
+
+        switch(Button) {
+            case'+':
+            result = a+b;
+            System.out.println("Result:"+ result);
+            break;
+            case'-':
+            result = a-b;
+            System.out.println("Result"+ result);
+            break;
+            case'*':
+            result = a*b;
+            System.out.println("Result"+result);
+            break;
+            case'/':
+            result = a/b;
+            System.out.println("Result"+ result);
+            break;
+            default: System.out.println("Invalid operation: Please enter +, -, *, /, or %");
+                break;
+
+        }
+
+    }
+}
+
+
+//Make a Calculator. Take 2 numbers (a & b) from the user and an operation as follows : 
+	//1 : + (Addition) a + b
+//2 : - (Subtraction) a - b
+//3 : * (Multiplication) a * b
+//4 : / (Division) a / b
+//5 : % (Modulo or remainder) a % b
+//Calculate the result according to the operation given and display it to the user.
