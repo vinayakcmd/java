@@ -1,0 +1,21 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+import java.util.Scanner;
+
+public class compare {
+   public compare() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      int var2 = var1.nextInt();
+      int var3 = var1.nextInt();
+      if (var2 == var3) {
+         System.out.println("is Equal");
+      } else if (var2 > var3) {
+         System.out.println("is greater");
+      } else {
+         System.out.println("is smaller");
+      }
+
+   }
+}
