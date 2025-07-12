@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class test {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+
+        System.out.println("ENter yur name");
+        String name = sc.nextLine();
+
+        System.out.println("Enter your age");
+        int age =sc.nextInt();
+
+        System.out.println("Enter your Marks");
+        double marks = sc.nextDouble();
+
+        boolean isPassed = marks >= 35;
+        System.out.println("You Are Passed:"+isPassed);
+    }
+} 
